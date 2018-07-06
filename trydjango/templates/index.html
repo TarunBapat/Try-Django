@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>{{value}}</h1>
+        <h1>Its working </h1>
+
+        {% for object in object_list %}
+        <div class="col-sm-6 col-md-6">
+            <ul><li><h2><a href="{{object.get_absolute_url}}">{{object.title}}</a></h2>
+            </li> </ul>
+        </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
